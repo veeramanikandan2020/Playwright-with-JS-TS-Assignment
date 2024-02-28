@@ -35,8 +35,8 @@ test("Salesforce Create Individuals ", async () => {
   await page.click(
     "//button[contains(@class,'salesforceIdentityAppLauncherHeader')]"
   );
-
-  await page.click("//button[@aria-label='View All Applications']");
+  await page.click("button[kx-type='underline']");
+  //await page.click("//button[@aria-label='View All Applications']");
 
   await page.fill(
     "input[placeholder='Search apps or items...']",
