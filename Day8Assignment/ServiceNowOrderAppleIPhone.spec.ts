@@ -86,10 +86,7 @@ await data.click();
 
   const frameMain2 = page.frameLocator(`#gsft_main`);
 
-  const requestNo = frameMain2.locator(`a[id='requesturl'] > b`);
+  const requestNumber = await frameMain2.locator('a[id="requesturl"]').innerText();
+  console.log('Request Number: ' + requestNumber);
   
-  await requestNo.textContent();
-
-  console.log(requestNo);
-
 });
