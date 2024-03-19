@@ -1,0 +1,365 @@
+{
+	"info": {
+		"_postman_id": "bce71795-64ea-41dd-9740-49f7912daaae",
+		"name": "ServiceNow API HomeAssignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32185280",
+		"_collection_link": "https://galactic-satellite-182193.postman.co/workspace/API-Fundamentals-Playwright~7e7ca7cd-9de0-4c6f-a2e1-61edc8a09cc4/collection/32185280-bce71795-64ea-41dd-9740-49f7912daaae?action=share&source=collection_link&creator=32185280"
+	},
+	"item": [
+		{
+			"name": "Post Change Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"short_description\": \"ServiceNow Change Request Post\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev198313.service-now.com/api/now/table/change_request?sysparm_fields=sys_id,number,short_description,sys_class_name",
+					"protocol": "https",
+					"host": [
+						"dev198313",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"change_request"
+					],
+					"query": [
+						{
+							"key": "sysparm_fields",
+							"value": "sys_id,number,short_description,sys_class_name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve Change Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev198313.service-now.com/api/now/table/change_request/ce68c96047450210d03ead54116d4344?sysparm_fields=sys_id,number,short_description,sys_class_name",
+					"protocol": "https",
+					"host": [
+						"dev198313",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"change_request",
+						"ce68c96047450210d03ead54116d4344"
+					],
+					"query": [
+						{
+							"key": "sysparm_fields",
+							"value": "sys_id,number,short_description,sys_class_name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modify Change Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"short_description\": \"Modifying the ServiceNow Change Request using PUT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev198313.service-now.com/api/now/table/change_request/ce68c96047450210d03ead54116d4344?sysparm_fields=sys_id,number,short_description,sys_class_name",
+					"protocol": "https",
+					"host": [
+						"dev198313",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"change_request",
+						"ce68c96047450210d03ead54116d4344"
+					],
+					"query": [
+						{
+							"key": "sysparm_fields",
+							"value": "sys_id,number,short_description,sys_class_name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve Change Request after PUT",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev198313.service-now.com/api/now/table/change_request/ce68c96047450210d03ead54116d4344?sysparm_fields=sys_id,number,short_description,sys_class_name",
+					"protocol": "https",
+					"host": [
+						"dev198313",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"change_request",
+						"ce68c96047450210d03ead54116d4344"
+					],
+					"query": [
+						{
+							"key": "sysparm_fields",
+							"value": "sys_id,number,short_description,sys_class_name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modify Change Request",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"short_description\": \"Modify ServiceNow Change Request using Patch\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev198313.service-now.com/api/now/table/change_request/ce68c96047450210d03ead54116d4344?sysparm_fields=sys_id,number,short_description,sys_class_name",
+					"protocol": "https",
+					"host": [
+						"dev198313",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"change_request",
+						"ce68c96047450210d03ead54116d4344"
+					],
+					"query": [
+						{
+							"key": "sysparm_fields",
+							"value": "sys_id,number,short_description,sys_class_name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve Change Request after Patch",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev198313.service-now.com/api/now/table/change_request/ce68c96047450210d03ead54116d4344?sysparm_fields=sys_id,number,short_description,sys_class_name",
+					"protocol": "https",
+					"host": [
+						"dev198313",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"change_request",
+						"ce68c96047450210d03ead54116d4344"
+					],
+					"query": [
+						{
+							"key": "sysparm_fields",
+							"value": "sys_id,number,short_description,sys_class_name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Change Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev198313.service-now.com/api/now/table/change_request/ce68c96047450210d03ead54116d4344",
+					"protocol": "https",
+					"host": [
+						"dev198313",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"change_request",
+						"ce68c96047450210d03ead54116d4344"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve Change Request after Delete",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev198313.service-now.com/api/now/table/change_request/ce68c96047450210d03ead54116d4344?sysparm_fields=sys_id,number,short_description,sys_class_name",
+					"protocol": "https",
+					"host": [
+						"dev198313",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"change_request",
+						"ce68c96047450210d03ead54116d4344"
+					],
+					"query": [
+						{
+							"key": "sysparm_fields",
+							"value": "sys_id,number,short_description,sys_class_name"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "dn25@VTdVUa%",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "admin",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
